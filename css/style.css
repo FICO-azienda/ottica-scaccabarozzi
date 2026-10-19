@@ -131,7 +131,7 @@ a.topbar__item:hover { color: #fff; }
 
 .site-nav__list { list-style: none; margin: 0; padding: 0; display: flex; gap: 2rem; }
 .site-nav__list a {
-  text-decoration: none; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 600;
+  text-decoration: none; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; white-space: nowrap;
   position: relative; padding: .4rem 0;
 }
 .site-nav__list a::after {
@@ -141,11 +141,12 @@ a.topbar__item:hover { color: #fff; }
 .site-nav__list a:hover::after, .site-nav__list a[aria-current]::after { transform: scaleX(1); }
 
 .menu-toggle { display: none; }
+.site-nav__cta { white-space: nowrap; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .site-nav { display: flex; align-items: center; gap: 2.5rem; }
 }
-@media (max-width: 999px) {
+@media (max-width: 1199px) {
   .menu-toggle {
     display: grid; place-items: center; width: 46px; height: 46px; background: none; border: 1px solid var(--line); border-radius: 50%; cursor: pointer;
   }
@@ -168,7 +169,7 @@ a.topbar__item:hover { color: #fff; }
   .site-nav__list { flex-direction: column; gap: 0; }
   .site-nav__list a { display: block; font-family: var(--serif); font-size: 2rem; text-transform: none; letter-spacing: 0; font-weight: 500; padding: .7rem 0; border-bottom: 1px solid var(--line); }
   .site-nav__list a::after { display: none; }
-  .site-nav__cta { align-self: flex-start; }
+.site-nav__cta { align-self: flex-start; }
 }
 
 /* ---------- Hero ---------- */

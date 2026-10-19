@@ -42,7 +42,7 @@
       toggle.focus();
     }
   });
-  window.matchMedia('(min-width: 900px)').addEventListener('change', function (mq) {
+  window.matchMedia('(min-width: 1200px)').addEventListener('change', function (mq) {
     if (mq.matches) setMenu(false);
   });
 
